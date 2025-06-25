@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emergency Contacts for Physically Challenged</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #e9f7ef;
+      font-family: 'Arial', sans-serif;
+    }
+    .contact-card:hover {
+      background-color: #a8dadc;
+      transition: 0.3s ease-in-out;
+      color: #1d3557;
+    }
+    .nav-link.active {
+      font-weight: 600;
+      color: #1d3557 !important;
+    }
+    .phone-icon {
+      font-size: 1.5rem;
+      color: #1d3557;
+    }
+    .contact-description {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4" role="navigation" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" tabindex="0">PhyPortal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" tabindex="0">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" role="menubar">
+          <li class="nav-item" role="none">
+            <a class="nav-link" href="phy_jobs.html" role="menuitem" tabindex="0">Jobs</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a class="nav-link" href="phy_stories.html" role="menuitem" tabindex="0">Stories</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a class="nav-link active" href="phy_emergency.html" role="menuitem" aria-current="page" tabindex="0">Emergency</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="container mb-5 text-center">
+    <h1 class="mb-3 text-success">Emergency Contacts for Physically Challenged</h1>
+    <p class="lead text-secondary">Quick and easy access to important helplines designed to support your specific needs.</p>
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" 
+         alt="Emergency Support" class="img-fluid rounded shadow" style="max-height: 300px; object-fit: cover;" />
+  </header>
+
+  <!-- Emergency List -->
+  <main class="container" role="main" aria-label="Emergency contact list">
+    <div class="list-group shadow-sm" role="list">
+      <a href="tel:112" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="Emergency Police, phone number 112" tabindex="0">
+        <div>
+          <strong>Emergency Police</strong>
+          <div class="contact-description">Immediate police assistance for safety and security concerns.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">🚓 112</span>
+      </a>
+      <a href="tel:101" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="Fire Department, phone number 101" tabindex="0">
+        <div>
+          <strong>Fire Department</strong>
+          <div class="contact-description">For fire emergencies, rescue and evacuation support.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">🔥 101</span>
+      </a>
+      <a href="tel:108" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="Ambulance, phone number 108" tabindex="0">
+        <div>
+          <strong>Ambulance Services</strong>
+          <div class="contact-description">Medical emergency transport with priority for accessibility needs.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">🚑 108</span>
+      </a>
+      <a href="tel:1098" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="Child Helpline, phone number 1098" tabindex="0">
+        <div>
+          <strong>Child Helpline</strong>
+          <div class="contact-description">Support and protection for children with disabilities.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">📞 1098</span>
+      </a>
+      <a href="tel:1800111100" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="Women Helpline, phone number 1800-111-100" tabindex="0">
+        <div>
+          <strong>Women Helpline</strong>
+          <div class="contact-description">Dedicated support for women facing abuse or discrimination.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">☎️ 1800-111-100</span>
+      </a>
+      <a href="tel:144" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="Disaster Management, phone number 144" tabindex="0">
+        <div>
+          <strong>Disaster Management</strong>
+          <div class="contact-description">Help during natural disasters, with accessible evacuation assistance.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">🌪️ 144</span>
+      </a>
+      <a href="tel:112" class="list-group-item list-group-item-action contact-card d-flex justify-content-between align-items-center" role="listitem" aria-label="General Emergency, phone number 112" tabindex="0">
+        <div>
+          <strong>General Emergency</strong>
+          <div class="contact-description">Any urgent situation requiring immediate support.</div>
+        </div>
+        <span class="phone-icon" aria-hidden="true">🚨 112</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-4 mt-5 shadow-sm">
+    <small>© 2025 PhyPortal. Stay Safe & Supported.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
